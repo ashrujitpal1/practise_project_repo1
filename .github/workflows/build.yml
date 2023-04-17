@@ -14,8 +14,8 @@ jobs:
         run: npm ci
       - name: setup configuration
         run: npm init @eslint/config 
-      - name: Run lint
-        run: npm run lint
+      - name: Run ESLint
+        run: eslint . --ext .js,.jsx,.ts,.tsx
       - name: Run test
         run: npm test
   build:
